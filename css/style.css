@@ -97,7 +97,8 @@ body {
 .pos-abs{position: absolute;}
 .container{width: 1055px;margin: 0 auto;}
 .newpage{margin-top: 90px;}
-.container.client-container{width: 939px;}
+.container.client-container,.span12{width: 939px;}
+.client-row-slider{margin-top: 30px;}
 footer{margin-top: 7px;background:url(../images/pattern.png) 0 0 repeat-x;height: 64px;line-height: 64px;
   background-color: #31353a;
 background-image: -webkit-linear-gradient(top, #31353a, #2f3337);
