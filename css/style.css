@@ -109,7 +109,7 @@ footer p{text-align: center;color: #ffffff;font-size: 14px;margin-bottom: 0;}
 footer a {color: #ffffff;font-size: 14px;}
 .social-media{;width: 221px;position: absolute;top: 0;right: 0;}
 .icons{list-style: none;overflow: hidden;margin-bottom: 0;margin-top: 14px;}
-.icons li{position: relative;overflow: hidden;float: left;margin-right: 5px;}
+.icons li{position: relative;overflow: hidden;float: left;margin-right: 5px;border-radius: 41px;}
 .icons li.fb{background: url(../images/sprites.png) left bottom no-repeat;width: 40px;height: 41px;}
 .icons li.twitter{background: url(../images/sprites.png) left -86px no-repeat;width: 40px;height: 40px;}
 .icons li.linkedin{background: url(../images/sprites.png) left -131px no-repeat;width: 40px;height: 40px;}
