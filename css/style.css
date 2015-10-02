@@ -118,7 +118,7 @@ height: 2px;
   margin-top: 11px;float: left;color: #002060;font-family: Times,Arial,Sans-serif;font-weight: bold;}
 .navbar>.container .navbar-brand.logo:hover{color:#9d9d9d; }
 .carousel-caption.data-caption{width: 600px;top: 22%;right: 10%;left: 10%;text-align: left;}
-.button-click{margin-left : 45px;}
+.carousel-caption p.button-click{margin:30px 0 0 45px;}
 .img{position: absolute;top: 28%;right: 13%;}
 .img.two{top: 22%;}
 .img.three{top: 5%;right: 7%;}
@@ -175,6 +175,26 @@ top: 32px;
 }
 .topnavbar ul.dark_menu li ul.inner-ul li.sec:hover ul.sub-menu{width: 334px;display: block;}
 .topnavbar ul.dark_menu li ul.inner-ul li:hover > ul{display: block;}
+ .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
 ul.dark_menu {
     list-style: none;
     padding: 0;
@@ -428,11 +448,13 @@ display:none;
 .nbs-flexisel-nav-left {
     left: 10px;
     background: url(../images/button-previous.png) no-repeat;
+    display: none;
 }
 
 .nbs-flexisel-nav-right {
     right: 5px;
     background: url(../images/button-next.png) no-repeat;
+    display: none;
 }
 .caret {
 display: inline-block;
@@ -458,7 +480,7 @@ border-left: 4px solid transparent;
     #primary_nav_wrap ul.dark_menu{width: 100%;}
     #navbar{background: rgb(233, 233, 233);border-color: rgb(233, 233, 233);}
     .topnavbar{float: none;}
-    #primary_nav_wrap ul li{width: 100%;float: none;}
+    #primary_nav_wrap ul li{width: 100%;float: none;border-bottom: 1px solid #cccccc;}
     .navbar-collapse.collapse {
         display: none !important;
     }
@@ -472,25 +494,6 @@ border-left: 4px solid transparent;
         float:none;
     }
 }
-@media (min-width: 768px) {
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
+@media screen and (max-width: 360px){
+  .navbar>.container .navbar-brand.logo .logo-text{font-size: 36px;}
 }
