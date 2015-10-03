@@ -2,6 +2,7 @@ h1,h2,h3,h4,p{font-family: Arial,sans-serif;}
 body {
   color: #5a5a5a;
   font-family: Arial,sans-serif;
+  background-color: #f7f7f7;
 }
 /*==========================header====================================*/
 .navbar-wrapper {
@@ -300,7 +301,7 @@ ul.dark_menu li ul li a:hover {
 footer a:hover{text-decoration: underline;color: #ffffff;}
 
 /***************************************SERVICS PAGE **********************************************************/
-.main-title{font-size: 28px;font-family: Arial, sans-serif;margin-bottom: 5px;font-weight: bold;}
+.main-title{font-size: 28px;font-family: Arial, sans-serif;margin-bottom: 5px;font-weight: bold;color: #002060;}
 .block{padding: 31px 0;}
 .block2{border-top: 1px solid #cccccc;padding-top: 31px;}
 
@@ -467,6 +468,13 @@ border-right: 4px solid transparent;
 border-left: 4px solid transparent;
 }
 .topnavbar{float: right;}
+
+
+/*==================================About Us=========================================*/
+
+.main-container{margin-top: 70px; margin-bottom: 40px}
+.page-title-header{font-size:26px;color:#002060;font-weight: bold;}
+.main-container p{font-size: 14px;font-family: Arial,Sans-serif;}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media screen and (max-width: 1348px){
