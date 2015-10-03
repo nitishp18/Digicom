@@ -120,13 +120,15 @@ height: 2px;
 .navbar>.container .navbar-brand.logo:hover{color:#9d9d9d; }
 .carousel-caption.data-caption{width: 600px;top: 22%;right: 10%;left: 10%;text-align: left;}
 .carousel-caption p.button-click{margin:30px 0 0 45px;}
-.img{position: absolute;top: 28%;right: 13%;}
-.img.two{top: 22%;}
+.img{position: absolute;top: 28%;right: 6%;}
+.img.two{top: 5%;right: 6%;}
 .img.three{top: 5%;right: 7%;}
 .img.four{top: 32%;right: 7%;}
+.img.last{top: 11%;}
 .praises{
     background: #F7F7F7;
 }
+
 .praises .customers{
     background: inherit;
     padding: 10px 0 30px;
@@ -501,6 +503,7 @@ border-left: 4px solid transparent;
     .navbar-header {
         float:none;
     }
+    #myCarousel .container img{display: none;}
 }
 @media screen and (max-width: 470px){
   #primary_nav_wrap ul ul ul.sub-menu{display: none;}
