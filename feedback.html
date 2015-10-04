@@ -1,33 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name = "viewport" content = "user-scalable=no, width=device-width">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel='shortcut icon' href='images/favicon.ico' />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Digicom</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  
+    <link href="css/style.css" rel="stylesheet">
 
-        <title>Feedback</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ 
+  </head>
 
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-        <link rel="stylesheet" href="css/custom.css">
-        <link href="css/style.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <style type="text/css">
-            .text-danger{
-                display: none;
-            }
-        </style>
-    </head>
-    <body>
-                
-        <div class="form-cont">
+  <body>
+    <div class="navbar-wrapper clearfix">
+        <nav class="navbar navbar-inverse navbar-static-top header-bar">
+            <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                     <a class="navbar-brand logo" href="index.html"><img src="images/logofresh1.png" class="imglogo" alt="logo"><span class="logo-text">Digicom</span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <nav class="pull-right topnavbar" id="primary_nav_wrap">
+                        <ul class="dark_menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Solutions</a>
+                                <ul class="inner-ul">
+                                    <li><a href="telecom.html">Telecom</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="telecom.html#digi">Digital Communication systems</a></li>
+                                            <li><a href="telecom.html#vop">VoIP solutions</a></li>
+                                            <li><a href="telecom.html#wireless">Wireless solutions</a></li>
+                                            <li><a href="telecom.html#call">Call Center solutions</a></li>
+                                            <li><a href="telecom.html#dealing">Dealing room solutions</a></li>
+                                            <li><a href="telecom.html#multi">Multi Zone PA systems</a></li>
+                                            <li><a href="telecom.html#video">Video conferencing solutions</a></li>
+                                            <li><a href="telecom.html#mobility">Mobility solutions</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="security.html">Security</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="security.html#cctv">CCTV solutions</a></li>
+                                            <li><a href="security.html#act">AC&Time attendance solutions</a></li>
+                                            <li><a href="security.html#intrusion">Intrusion alarm solutions</a></li>
+                                            <li><a href="security.html#">Video doorphone solutions</a></li>
+                                            <li><a href="security.html#videoapart">Video Apartment Solutions</a></li>
+                                            <li><a href="security.html#fire">Fire alarm solutions</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="crm.html">Conference Rooms</a>
+                                        <ul class="sub-menu">
+                                           <!--  <li><a href="#">Lighting control solutions</a></li>
+                                            <li><a href="#">AV integration solutions</a></li> -->
+                                        </ul>
+                                    </li>
+                                    <li><a href="smarthomes.html">Smart homes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Testimonals</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="affiliations.html">Affiliations</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="main-container container">
+        <h3 class="page-title-header">Feedback</h3>
+         <div class="form-cont">
             <form  id="feedback_form" class="form-horizontal" role="form">
                 <div class="form-group">
                     <label for="name" class="col-sm-2 control-label">Name</label>
@@ -103,70 +158,82 @@
                     </div>
                 </div>
             </form> 
-        </div>
-         <script type="text/javascript">
-             $(function(){
-                $('#feedback_form').on('submit',function(){
-                    var fullName = $.trim($("#name").val()),
-                        company = $.trim($("#company").val()),
-                        phone_no = $.trim($("#phone_no").val()),
-                        email = $.trim($("#email").val()),
-                        type_of_feedback = $.trim($("#select1").val()),
-                        feedback_against = $.trim($("#select2").val()),
-                        feedback_message = $("textarea").val(),
-                        err = false,
-                        phone_no_regex = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/,
-                        email_regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
-                        post_data = null;
+        </div>  
+    </div>
+    <footer>
+        <div class="container pos-rel">
+            <p>&copy; 2015 Digicom, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p><div class="social-media">
+                <ul class="icons">
+                    <li class="fb"><a href=""></a></li>
+                    <li class="twitter"><a href=""></a></li>
+                    <li class="linkedin"><a href=""></a></li>
+                    <li class="gplus"><a href=""></a></li>
+                </ul>
+            </div>  
+        </div>  
+    </footer>
+<script type="text/javascript">
+     $(function(){
+        $('#feedback_form').on('submit',function(){
+            var fullName = $.trim($("#name").val()),
+                company = $.trim($("#company").val()),
+                phone_no = $.trim($("#phone_no").val()),
+                email = $.trim($("#email").val()),
+                type_of_feedback = $.trim($("#select1").val()),
+                feedback_against = $.trim($("#select2").val()),
+                feedback_message = $("textarea").val(),
+                err = false,
+                phone_no_regex = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/,
+                email_regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+                post_data = null;
 
-                    $(".text-danger").hide();
+            $(".text-danger").hide();
 
-                    if(!fullName){
-                        $("#name").siblings('.text-danger').show();
-                        err = true;
-                    }
-                    if (!phone_no || !phone_no_regex.test(phone_no)) {
-                        $("#phone_no").siblings('.text-danger').show();
-                        err = true;
-                    }
-                    if (!email || !email_regex.test(email)) {
-                        $("#email").siblings('.text-danger').show();
-                        err = true;
-                    }
-                    if(!type_of_feedback){
-                        $("#select1").siblings('.text-danger').show();
-                        err = true;
-                    }
-                    if(!feedback_against){
-                        $("#select2").siblings('.text-danger').show();
-                        err = true;
-                    }
+            if(!fullName){
+                $("#name").siblings('.text-danger').show();
+                err = true;
+            }
+            if (!phone_no || !phone_no_regex.test(phone_no)) {
+                $("#phone_no").siblings('.text-danger').show();
+                err = true;
+            }
+            if (!email || !email_regex.test(email)) {
+                $("#email").siblings('.text-danger').show();
+                err = true;
+            }
+            if(!type_of_feedback){
+                $("#select1").siblings('.text-danger').show();
+                err = true;
+            }
+            if(!feedback_against){
+                $("#select2").siblings('.text-danger').show();
+                err = true;
+            }
 
-                    if(!err){
-                        post_data = {
-                            fullName : fullName,
-                            company : company,
-                            phone_no : phone_no,
-                            email: email,
-                            type_of_feedback: type_of_feedback,
-                            feedback_against: feedback_against,
-                            feedback_message : feedback_message,
-                            message_body: "Name: "+fullName+"<br> Company: "+company+"<br> Phone Number: "+phone_no
-                        }
+            if(!err){
+                post_data = {
+                    fullName : fullName,
+                    company : company,
+                    phone_no : phone_no,
+                    email: email,
+                    type_of_feedback: type_of_feedback,
+                    feedback_against: feedback_against,
+                    feedback_message : feedback_message,
+                    message_body: "Name: "+fullName+"<br> Company: "+company+"<br> Phone Number: "+phone_no
+                }
 
-                        $.post('php/feedback.php', post_data, function(data, textStatus, xhr) {
-                            /*optional stuff to do after success */
-                            console.log(data);
-                        });
-                        
-                        
-                    }
-
-                    
-                    return false;
+                $.post('php/feedback.php', post_data, function(data, textStatus, xhr) {
+                    /*optional stuff to do after success */
+                    console.log(data);
                 });
-             });
-         </script>   
-    </body>
+                
+                
+            }
+
+            
+            return false;
+        });
+     });
+ </script> 
+</body>
 </html>
-    

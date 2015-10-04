@@ -28,6 +28,7 @@ body {
   width: auto;
   background:rgba(226, 219, 219, 0.38);
 }
+ .text-danger{display: none; }
 .left-img{margin-top: 62px;}
 .certify{font-size: 45px;}
 .lead{margin-top: 80px;font-size: 25px;}
@@ -493,6 +494,8 @@ border-left: 4px solid transparent;
     margin: auto;
   }
 .noRightMargin{margin-right: 0;}
+.form-horizontal .control-label{font-size: 13px;font-family: Arial,sans-serif;}
+.iframe{width: 100% !important;}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media screen and (max-width: 1348px){
