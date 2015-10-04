@@ -15,7 +15,17 @@
 
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
- 
+    <script type="text/javascript">
+    $(document).ready(function(){
+        var index;
+        $(".brand").each( function (index) {
+            index += 1;
+            if(index % 5 == 0) {
+                $(this).addClass("noRightMargin");
+            }
+        });
+    });
+    </script>
   </head>
 
   <body>
@@ -35,7 +45,7 @@
                     <nav class="pull-right topnavbar" id="primary_nav_wrap">
                         <ul class="dark_menu">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
                             <li><a href="#">Solutions</a>
                                 <ul class="inner-ul">
                                     <li><a href="telecom.html">Telecom</a>
@@ -80,23 +90,68 @@
         </nav>
     </div>
     <div class="main-container container">
-        <h3 class="page-title-header">About us</h3>
-            <p>We are a 17 year old leading solution providers for SMART Office & SMART Home solutions and provide End – to – End solutions covering Design, Consultation, Delivery, Implementation, Integration, programming, warranty maintenance and post warranty services covering all products and solutions.</p>
-            <p>Our leading edge is our service. We are allied with prestigious names of the industry like Matrix, Enjay, Axis, Hikvision, Dahua, Securico, Commax,  Philips (Dynalite), for its entire range of Telecom, Security and Automation solutions.
-            We aim to provide state of the art technology to its customers at very affordable prices in the Indian market.</p>
-            <p>With almost Fifty Five years of combined experience between them, the founders have a rich and varied experience and have been intimately associated with various organizations in domestic and international telecom & security industry. </p>
-            <p>At DIGICOM, we have dealt with all aspects of solutions management, especially for the large and diverse organizations.</p>
-            <p>We focus our efforts to provide communications related services. Our range encompasses almost all areas of the technology like:</p>
-            <ul>
-                <li>Communication systems</li>
-                <li> CRM systems</li>
-                <li>Automation systems</li>
-                <li>Services</li>
-                <li>CCTV & Security systems</li>
-                <li>Integration</li>
-            </ul>
-            <p>Our trained professionals are experts at executing projects. We emphasize and practice continuing education on technology for our personnel. Naturally, our engineers are very committed hard-core professionals. We cultivate and sustain a personal relationship with our engineers. We walk the proverbial extra mile to make our engineers feel comfortable, secure and happy to work with us. This is consistent with our motto - to develop relationships and it ensures that they give their very best to the work. </p>
-            <p>We always strive to ensure that all the business practices are ethical and professional and deliver solutions….</p>
+        <h3 class="page-title-header">Affiliations</h3>
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/axis-aff.png" alt="axis">
+        </div>
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/commax-aff.jpg" alt="axis">
+        </div>
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/cpplus-aff.jpg" alt="axis">
+        </div>
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/dahua-aff.jpg" alt="axis">
+        </div>  
+        
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/enjay-aff.jpg" alt="axis">
+        </div>  
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/gst-aff.jpg" alt="axis">
+        </div>
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/hikvision-aff.jpg" alt="axis">
+        </div>  
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/matrix-aff.jpg" alt="axis">
+        </div>  
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/milestone-aff.png" alt="axis">
+        </div>
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/mitel-aff.jpg" alt="axis">
+        </div>
+         <div class="brand">
+            <span class="helper"></span>
+            <img src="images/ncc-aff.png" alt="axis">
+        </div>
+         <div class="brand">
+            <span class="helper"></span>
+            <img src="images/panasonic-aff.jpg" alt="axis">
+        </div>
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/ravel-aff.jpg" alt="axis">
+        </div>
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/securico-aff.png" alt="axis">
+        </div>
+        <div class="brand">
+            <span class="helper"></span>
+            <img src="images/securus-aff.jpg" alt="axis">
+        </div>    
     </div>
     <footer>
         <div class="container pos-rel">
