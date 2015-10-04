@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name = "viewport" content = "user-scalable=no, width=device-width">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel='shortcut icon' href='images/favicon.ico' />
+
+        <title>Feedback</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link href="css/style.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <style type="text/css">
+            .text-danger{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+                
+        <div class="form-cont">
+            <form  id="feedback_form" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="name" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                        <p class='text-danger'>Please Enter First & Last Name.</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="company" class="col-sm-2 control-label">Company</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="company" name="name" placeholder="Company" value="">
+                        <p class='text-danger'>Please Enter Company Name.</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone_no" class="col-sm-2 control-label">Phone Number</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="phone_no" name="name" placeholder="Company" value="">
+                        <p class='text-danger'>Please Enter Valid Phone Number.</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-5">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+                        <p class='text-danger'>Please Enter Valid Email.</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="select1" class="col-sm-2 control-label">What kind of feedback would you like to send</label>
+                    <div class="col-sm-5">
+                        <select class="form-control" id="select1">
+                          <option value="">Select Option</option>
+                          <option value="Enquiry">Enquiry</option>
+                          <option value="Compliment">Compliment</option>
+                          <option value="Suggestion">Suggestion</option>
+                          <option value="Complaint">Complaint</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <p class='text-danger'>Please Select a option.</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="select2" class="col-sm-2 control-label">Feedback against what:</label>
+                    <div class="col-sm-5">
+                        <select class="form-control" id="select2">
+                          <option value="">Select Option</option>
+                          <option value="Company">Company</option>
+                          <option value="Employee">Employee</option>
+                          <option value="Product/solution">Product/solution</option>
+                          <option value="Website">Website</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <p class='text-danger'>Please Select a option.</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="col-sm-2 control-label">Feedback Box</label>
+                    <div class="col-sm-5">
+                        <textarea class="form-control" rows="4" name="message"></textarea>
+                        <p class='text-danger'>Please enter feedback message.</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-5 col-sm-offset-2">
+                        <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-5 col-sm-offset-2">
+                        <!-- Your message here -->
+                    </div>
+                </div>
+            </form> 
+        </div>
+         <script type="text/javascript">
+             $(function(){
+                $('#feedback_form').on('submit',function(){
+                    var fullName = $.trim($("#name").val()),
+                        company = $.trim($("#company").val()),
+                        phone_no = $.trim($("#phone_no").val()),
+                        email = $.trim($("#email").val()),
+                        type_of_feedback = $.trim($("#select1").val()),
+                        feedback_against = $.trim($("#select2").val()),
+                        feedback_message = $("textarea").val(),
+                        err = false,
+                        phone_no_regex = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/,
+                        email_regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+                        post_data = null;
+
+                    $(".text-danger").hide();
+
+                    if(!fullName){
+                        $("#name").siblings('.text-danger').show();
+                        err = true;
+                    }
+                    if (!phone_no || !phone_no_regex.test(phone_no)) {
+                        $("#phone_no").siblings('.text-danger').show();
+                        err = true;
+                    }
+                    if (!email || !email_regex.test(email)) {
+                        $("#email").siblings('.text-danger').show();
+                        err = true;
+                    }
+                    if(!type_of_feedback){
+                        $("#select1").siblings('.text-danger').show();
+                        err = true;
+                    }
+                    if(!feedback_against){
+                        $("#select2").siblings('.text-danger').show();
+                        err = true;
+                    }
+
+                    if(!err){
+                        post_data = {
+                            fullName : fullName,
+                            company : company,
+                            phone_no : phone_no,
+                            email: email,
+                            type_of_feedback: type_of_feedback,
+                            feedback_against: feedback_against,
+                            feedback_message : feedback_message,
+                            message_body: "Name: "+fullName+"<br> Company: "+company+"<br> Phone Number: "+phone_no
+                        }
+
+                        $.post('php/feedback.php', post_data, function(data, textStatus, xhr) {
+                            /*optional stuff to do after success */
+                            console.log(data);
+                        });
+                        
+                        
+                    }
+
+                    
+                    return false;
+                });
+             });
+         </script>   
+    </body>
+</html>
+    
