@@ -82,9 +82,22 @@
     </div>
     <div class="main-container container">
         <h3 class="page-title-header">Contact us</h3>
-        <div class="col-lg-12">
-            <div class="col-lg-5">
-                <div class="form-cont col-md-12">
+        <div class="address">
+            <p class="title"><b>Address</b></p>
+            <p>Digicom</p>
+            <p>103, Raj Swastik</p>
+            <p>Daulat Nagar Road No.3,</p>
+            <p>Borivali (E)</p>
+            <p>Mumbai 400 066</p>
+            <p>2863 5065 / 2863 5066</p>
+            <p>810 830 6444</p>
+            <p>810 830 9444</p>
+            <p><a href="http://www.digicomindia.com/" target="_blank">http://www.digicomindia.com</a></p>
+            <p><a href="mailto:sales@digicomindia.com" target="_top">mailto:sales@digicomindia.com</a></p>
+        </div>
+        <div class="col-lg-12 padding-null">
+            <div class="col-lg-5 padding-null">
+                <div class="form-cont col-md-12 padding-null">
                     <form  id="contact_us" class="form-horizontal" role="form">
                         <div class="form-group ">
                             <label for="name" class="col-md-2 col-sm-2 control-label">Name</label>
@@ -187,9 +200,7 @@
                     phone_no_regex = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/,
                     email_regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
                     post_data = null;
-
                 $(".text-danger").hide();
-
                 if(!fullName){
                     $("#name").siblings('.text-danger').show();
                     err = true;
@@ -206,7 +217,6 @@
                     $("#select1").siblings('.text-danger').show();
                     err = true;
                 }
-
                 if(!err){
                     /*post_data = {
                         fullName : fullName,
@@ -217,14 +227,12 @@
                         comments : comments,
                         message_body: "Name: "+fullName+"<br> Company: "+company+"<br> Phone Number: "+phone_no
                     }
-
                     $.post('php/feedback.php', post_data, function(data, textStatus, xhr) {
                         console.log(data);
                     });*/
                     
                     
                 }
-
                 
                 return false;
             });
