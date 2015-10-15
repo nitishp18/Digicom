@@ -304,7 +304,7 @@ ul.dark_menu li ul li a:hover {
 footer a:hover{text-decoration: underline;color: #ffffff;}
 
 /***************************************SERVICS PAGE **********************************************************/
-.main-title{font-size: 28px;font-family: Arial, sans-serif;margin-bottom: 5px;font-weight: bold;color: #002060;text-transform: uppercase;}
+.main-title{font-size: 28px;font-family: Arial, sans-serif;margin-bottom: 5px;font-weight: bold;color: #002060;text-transform: capitalize;}
 .block{padding: 31px 0;}
 .block2{border-top: 1px solid #cccccc;padding-top: 31px;}
 
