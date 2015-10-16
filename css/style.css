@@ -58,8 +58,9 @@ body {
   min-width: 100%;
   min-height: 100%;
 }
-
-
+.carousel-indicators .active{background:#1B439C; }
+.carousel-indicators li{border-color:#1B439C; }
+.carousel-caption.data-caption h2{font-size: 38px;color: #1B439C;}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
