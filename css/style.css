@@ -329,10 +329,10 @@ footer a:hover{text-decoration: underline;color: #ffffff;}
 {
   display:none;
   position:absolute;
-  top:62px;
+  top:63px;
   left:13px;
   background:rgb(228, 222, 222);
-  padding:0
+  padding:0;
 }
 
 #primary_nav_wrap ul ul li
