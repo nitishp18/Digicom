@@ -94,7 +94,6 @@ footer{background:url(../images/pattern.png) 0 0 repeat-x;height: 64px;line-heig
 }
 footer p{text-align: center;color: #ffffff;font-size: 14px;margin-bottom: 0;}
 footer a {color: #ffffff;font-size: 14px;}
-footer.footer-homepage{position: absolute;width: 100%;left: 0;bottom: 0;}
 .social-media{;width: 133px;position: absolute;top: 0;right: 0;}
 .icons{list-style: none;margin-bottom: 0;margin-top: 14px;}
 .icons li{position: relative;overflow: hidden;float: left;margin-right: 5px;border-radius: 41px;}
