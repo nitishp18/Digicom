@@ -16,15 +16,13 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function(){
-        // var index;
-        // $(".brand").each( function (index) {
-        //     index += 1;
-        //     if(index % 5 == 0) {
-        //         $(this).addClass("noRightMargin");
-        //     }
-        // });
-    });
+        $(document).ready(function() {
+            $("[href]").each(function() {
+            if (this.href == window.location.href) {
+                $(this).addClass("active");
+                }
+            });
+        });
     </script>
   </head>
 

@@ -20,7 +20,15 @@
 
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("[href]").each(function() {
+            if (this.href == window.location.href) {
+                $(this).addClass("active");
+                }
+            });
+        });
+    </script>
    
   </head>
 <!-- NAVBAR
@@ -127,12 +135,12 @@
                     </div>
                 </div>
                 <div class="block row clearfix block2" id="vop" name="vop">
-                     <div class="c col-md-6">
+                     <div class="c col-md-5">
                         <p class="text-left">
                             <img class="img-responsive" src="images/digital2.png" width="auto" height="auto" alt="">
                         </p>
                     </div>
-                    <div class="c col-md-6 ">
+                    <div class="c col-md-7 ">
                         <h4 class="main-title">VoIP solutions</h4>
                         <div class="desc">
                             <p>We specialise in offering seamless multi site networking VoIP solutions with end-to-end services that include selection of service providers, designing the system, implementing the solution and maintaining it.</p>

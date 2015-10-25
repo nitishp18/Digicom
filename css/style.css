@@ -5,11 +5,7 @@ body {
   background-color: #ffffff;
 }
 /*==========================header====================================*/
-.strip{height: 40px;background: -webkit-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #4b6cb7 10%, #182848 90%); /* W3C */line-height: 40px;}
+.strip{height: 40px;background:#4b6cb7;line-height: 40px;}
 .strip p {display: block;text-align: right;padding-right: 20px;}
 .strip p span{color: #ffffff;font-family: Arial,sans-serif;font-size: 14px;}
 .navbar-nav{float: right;margin-right: 37px;}
@@ -79,26 +75,34 @@ body {
 .pos-rel{position: relative;}
 .pos-abs{position: absolute;}
 
-.newpage{margin-top: 90px;}
+.newpage{margin-top: 103px;}
 
 .nbs-flexisel-container{margin-top: 30px;}
-
-footer{background:url(../images/pattern.png) 0 0 repeat-x;height: 64px;line-height: 64px;
-  
-  background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #283048 10%, #859398 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #283048 10%, #859398 90%); /* W3C */
-        clear: both;
-}
-footer p{text-align: center;color: #ffffff;font-size: 14px;margin-bottom: 0;}
+ul,ol{list-style-type: none;}
+footer{background:#4b6cb7;height: 64px;clear: both;margin-top: 40px;}
+footer p{text-align: center;color: #ffffff;font-size: 14px;margin-top: 23px;}
 footer a {color: #ffffff;font-size: 14px;}
-.social-media{;width: 133px;position: absolute;top: 0;right: 0;}
-.icons{list-style: none;margin-bottom: 0;margin-top: 14px;}
-.icons li{position: relative;overflow: hidden;float: left;margin-right: 5px;border-radius: 41px;}
-.icons li.fb{background: url(../images/sprites.png) left bottom no-repeat;width: 40px;height: 41px;}
-.icons li.linkedin{background: url(../images/sprites.png) left -131px no-repeat;width: 40px;height: 40px;}
+.social-position {position: absolute;top: 18px;right: 0;list-style-type: none;}
+.social-position li { display:inline-block; *display:inline; margin-right:5px;line-height: 0;}
+.dg-sprite { background:url(../images/dg-sprite.png) no-repeat; display:inline-block; list-style-type: none;}
+a.google, a.in, a.fb, a.tw, a.mail { width:35px; height:33px; }
+a.google { background-position:-122px 0px; }
+a.google:hover, a.google:focus { background-position:-122px -53px; }
+a.in { background-position:-168px 0px; }
+a.in:hover, a.in:focus { background-position:-168px  -53px; }
+a.fb { background-position:-214px 0px; }
+a.fb:hover, a.fb:focus { background-position:-214px  -53px; }
+a.tw { background-position:-260px 0px; }
+a.tw:hover, a.tw:focus { background-position:-260px  -53px; }
+a.mail { background-position:-306px 0px; }
+a.mail:hover, a.mail:focus { background-position:-306px  -53px; }
+.sitemap-position { float:left; }
+.sitemap-position li { display:inline-block; *display:inline; border-right:1px solid #ccc; }
+.sitemap-position li.last { border-right:0; }
+.sitemap-position li a { display:inline-block; *display:inline; color:#55656f; text-decoration:none; padding:10px 10px 15px 10px; }
+.sitemap-position li a:hover, .sitemap-position li a:focus { color:#FFCC00; }
+.copy-position { text-align:center; padding:12px 0; }
+.copy-position p { color:#55656f; font-size:12px; }
 .row {margin: 0.5em 0;float: left;clear: both;}
 .row i {width: 52px;height: 2px;}
 /*-------------------------------------custom css -----------------------------------------------*/
@@ -160,9 +164,7 @@ right: 0;
 width: 256px;
 max-width: 400px;
 left: 164px;
-top: 32px;
-
-}
+top: 32px;}
 .topnavbar ul.dark_menu li ul.inner-ul li.sec:hover ul.sub-menu{width: 334px;display: block;}
 .topnavbar ul.dark_menu li ul.inner-ul li:hover > ul{display: block;}
  .navbar-wrapper .navbar {
@@ -292,14 +294,9 @@ footer a:hover{text-decoration: underline;color: #ffffff;}
 /***************************************SERVICS PAGE **********************************************************/
 .main-title{font-size: 28px;font-family: Arial, sans-serif;margin-bottom: 5px;font-weight: bold;color: #002060;text-transform: capitalize;}
 .block{padding: 31px 0;}
-.block2{border-top: 1px solid #cccccc;padding-top: 31px;}
+.block2{border-top: 1px solid #cccccc;padding-top: 110px}
 
 .desc p{font-size: 15px;font-family:Arial, sans-serif;line-height: 22px;}
-
-
-
-
-
 #primary_nav_wrap ul
 {
   list-style:none;
@@ -353,6 +350,7 @@ transition: all 0.3s ease-out;
 #primary_nav_wrap ul ul ul.sub-menu{top:0;left:166px;}
 #primary_nav_wrap ul li:hover > ul{display:block;}
 .dark_menu li:hover > a{color: #286090 !important;}
+#primary_nav_wrap  a.active{color: #286090;}
 #primary_nav_wrap ul li:hover > ul li:hover{background: #286090;}
 #primary_nav_wrap ul.inner-ul li:hover > a{color: #ffffff !important;}
 
@@ -467,6 +465,22 @@ border-left: 4px solid transparent;
   float: left;margin-right: 10px;margin-bottom: 10px;background: #ffffff;}
 
 .brand img{max-height: 100%;max-width: 100%;  width: auto;height: auto;position: absolute;   top: 0;  bottom: 0;  left: 0;  right: 0; margin: auto;}
+
+.brand:hover{transform: scale(1.1);
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-webkit-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+-ms-transition: all 0.3s ease 0s;
+box-shadow: 0 0 5px #999;
+-moz-box-shadow: 0 0 5px #999;
+-webkit-box-shadow: 0 0 5px #999;
+-o-box-shadow: 0 0 5px #999;
+-ms-box-shadow: 0 0 5px #999;}
 .noRightMargin{margin-right: 0;}
 .form-horizontal .control-label{font-size: 13px;font-family: Arial,sans-serif;}
 .iframe{width: 100% !important;}
