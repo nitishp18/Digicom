@@ -20,16 +20,6 @@
 
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("[href]").each(function() {
-            if (this.href == window.location.href) {
-                $(this).addClass("active");
-                }
-            });
-        });
-    </script>
-   
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -61,7 +51,7 @@
                             <ul class="dark_menu">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="aboutus.html">About Us</a></li>
-                                <li><a href="#">Solutions <span class="caret"></span></a>
+                                <li><a href="#" class="selected">Solutions <span class="caret"></span></a>
                                     <ul class="inner-ul">
                                         <li><a href="telecom.html">Telecom</a>
                                             <ul class="sub-menu">
@@ -117,7 +107,7 @@
             </div>
         </div>
             <div class="container newpage">
-                <div class="block row clearfix" id="digi" name="digi">
+                <div class="block row top-block clearfix" id="digi" name="digi">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
                         <p class="text-center">
                           

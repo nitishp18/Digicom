@@ -77,24 +77,22 @@ body {
 .pos-abs{position: absolute;}
 
 .newpage{margin-top: 103px;}
-
+.aboutus-ul{list-style-type: disc;padding-left: 20px}
 .nbs-flexisel-container{margin-top: 30px;}
 ul,ol{list-style-type: none;}
-footer{background:#4b6cb7;height: 42px;clear: both;margin-top: 40px;}
-footer p{text-align: center;color: #ffffff;font-size: 14px;margin-top: 12px;}
-footer a {color: #ffffff;font-size: 14px;}
-.social-position {position: absolute;top: 4px;right: 0;list-style-type: none;}
+footer{background:#ffffff;height: 42px;clear: both;margin-top: 40px;border-top: 1px solid #cccccc;}
+footer p{text-align: center;color: #000000;font-size: 14px;margin-top: 12px;}
+footer a,footer a:hover {color: #000000;font-size: 14px;}
+.social-position {position: absolute;top: 2px;right: 0;list-style-type: none;padding-top: 5px;}
 .social-position ul{margin-bottom: 0;}
 .social-position li { display:inline-block; *display:inline; margin-right:5px;line-height: 0;}
-.dg-sprite { background:url(../images/dg-sprite.png) no-repeat; display:inline-block; list-style-type: none;}
-a.google, a.in, a.fb, a.tw, a.mail { width:35px; height:33px; }
-a.google { background-position:-122px 0px; }
-a.google:hover, a.google:focus { background-position:-122px -53px; }
+.dg-sprite { display:inline-block; list-style-type: none;}
+a.google, a.in, a.fb, a.tw, a.mail { width:35px; height:35px; }
 
-a.fb { background-position:-214px 2px; }
-a.fb:hover, a.fb:focus { background-position:-214px  -53px; }
-a.tw { background-position:-260px 2px; }
-a.tw:hover, a.tw:focus { background-position:-260px  -53px; }
+a.fb { background:url(../images/fb.png) 0 0 no-repeat; }
+
+a.tw { background:url(../images/linkedin.png) 0 0 no-repeat; }
+
 
 .sitemap-position { float:left; }
 .sitemap-position li { display:inline-block; *display:inline; border-right:1px solid #ccc; }
@@ -351,8 +349,9 @@ transition: all 0.3s ease-out;
 #primary_nav_wrap ul li:hover > ul{display:block;}
 
 .dark_menu li:hover > a{color: #286090 !important;}
-#primary_nav_wrap  a.active{color: #286090;}
+
 #primary_nav_wrap ul li:hover > ul li:hover{background: #286090;}
+#primary_nav_wrap ul li a.selected {color:#286090; }
 #primary_nav_wrap ul.inner-ul li:hover > a{color: #ffffff !important;}
 
 
@@ -455,7 +454,8 @@ border-left: 4px solid transparent;
 
 /*==================================About Us=========================================*/
 
-.main-container{margin-top: 100px; margin-bottom: 40px}
+.main-container{margin-top: 100px; margin-bottom: 40px auto;}
+.page-contactus{max-width: 1000px;}
 .page-title-header,.category-page-title{font-size:26px;color:#002060;font-weight: bold;font-family: Arial,Sans-serif;}
 .category-page-title{font-size: 22px;}
 .main-container p{font-size: 16px;font-family: Arial,Sans-serif;}
@@ -483,14 +483,18 @@ box-shadow: 0 0 5px #999;
 -o-box-shadow: 0 0 5px #999;
 -ms-box-shadow: 0 0 5px #999;}
 .noRightMargin{margin-right: 0;}
-.form-horizontal .control-label{font-size: 13px;font-family: Arial,sans-serif;}
+.form-horizontal .control-label{font-size: 13px;font-family: Arial,sans-serif;text-align: left;padding: 0}
 .iframe{width: 100% !important;}
-
-
+.map{border:1px solid #cccccc;}
+.form-horizontal .form-group{margin: 0 0 15px 0;}
+.form-control{border-radius: 0;}
 .address p.title{font-size: 20px;}
 .address{margin-bottom: 20px;font-weight: bold;}
-.address p{margin-bottom: 0;line-height: 23px;}
+.address p{margin-bottom: 0;line-height: 23px;font-size: 14px;color: #000000;font-weight: normal;}
 .padding-null{padding: 0;}
+.sendbutton{padding-right: 15px;}
+.left-column{padding-left: 0;}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media screen and (max-width: 1348px){

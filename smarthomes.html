@@ -22,68 +22,6 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("[href]").each(function() {
-            if (this.href == window.location.href) {
-                $(this).addClass("active");
-                }
-            });
-        });
-    </script>
-
-<script type="text/javascript">
-
-$(window).load(function() {
-    $("#flexiselDemo1").flexisel();
-    $("#flexiselDemo2").flexisel({
-        enableResponsiveBreakpoints: true,
-        responsiveBreakpoints: { 
-            portrait: { 
-                changePoint:480,
-                visibleItems: 1
-            }, 
-            landscape: { 
-                changePoint:640,
-                visibleItems: 2
-            },
-            tablet: { 
-                changePoint:768,
-                visibleItems: 3
-            }
-        }
-    });
-
-    $("#flexiselDemo3").flexisel({
-        visibleItems: 5,
-        animationSpeed: 1000,
-        autoPlay: true,
-        autoPlaySpeed: 3000,            
-        pauseOnHover: true,
-        enableResponsiveBreakpoints: true,
-        responsiveBreakpoints: { 
-            portrait: { 
-                changePoint:480,
-                visibleItems: 1
-            }, 
-            landscape: { 
-                changePoint:640,
-                visibleItems: 2
-            },
-            tablet: { 
-                changePoint:768,
-                visibleItems: 3
-            }
-        }
-    });
-
-    $("#flexiselDemo4").flexisel({
-        clone:false
-    });
-    $('.nbs-flexisel-container').addClass('clearfix');
-});
-</script>
-   
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -116,7 +54,7 @@ $(window).load(function() {
                         <ul class="dark_menu">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="aboutus.html">About Us</a></li>
-                            <li><a href="#">Solutions <span class="caret"></span></a>
+                            <li><a href="#"  class="selected">Solutions <span class="caret"></span></a>
                                 <ul class="inner-ul">
                                     <li><a href="telecom.html">Telecom</a>
                                         <ul class="sub-menu">
