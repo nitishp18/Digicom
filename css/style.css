@@ -38,6 +38,7 @@ body {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+  text-shadow:none;
 }
 .carousel-indicators{bottom: 0;}
 /* Declare heights because of positioning of img element */
@@ -79,23 +80,22 @@ body {
 
 .nbs-flexisel-container{margin-top: 30px;}
 ul,ol{list-style-type: none;}
-footer{background:#4b6cb7;height: 64px;clear: both;margin-top: 40px;}
-footer p{text-align: center;color: #ffffff;font-size: 14px;margin-top: 23px;}
+footer{background:#4b6cb7;height: 42px;clear: both;margin-top: 40px;}
+footer p{text-align: center;color: #ffffff;font-size: 14px;margin-top: 12px;}
 footer a {color: #ffffff;font-size: 14px;}
-.social-position {position: absolute;top: 18px;right: 0;list-style-type: none;}
+.social-position {position: absolute;top: 4px;right: 0;list-style-type: none;}
+.social-position ul{margin-bottom: 0;}
 .social-position li { display:inline-block; *display:inline; margin-right:5px;line-height: 0;}
 .dg-sprite { background:url(../images/dg-sprite.png) no-repeat; display:inline-block; list-style-type: none;}
 a.google, a.in, a.fb, a.tw, a.mail { width:35px; height:33px; }
 a.google { background-position:-122px 0px; }
 a.google:hover, a.google:focus { background-position:-122px -53px; }
-a.in { background-position:-168px 0px; }
-a.in:hover, a.in:focus { background-position:-168px  -53px; }
-a.fb { background-position:-214px 0px; }
+
+a.fb { background-position:-214px 2px; }
 a.fb:hover, a.fb:focus { background-position:-214px  -53px; }
-a.tw { background-position:-260px 0px; }
+a.tw { background-position:-260px 2px; }
 a.tw:hover, a.tw:focus { background-position:-260px  -53px; }
-a.mail { background-position:-306px 0px; }
-a.mail:hover, a.mail:focus { background-position:-306px  -53px; }
+
 .sitemap-position { float:left; }
 .sitemap-position li { display:inline-block; *display:inline; border-right:1px solid #ccc; }
 .sitemap-position li.last { border-right:0; }
@@ -115,7 +115,7 @@ a.mail:hover, a.mail:focus { background-position:-306px  -53px; }
   margin-top: 11px;float: left;color: #002060;font-family: Times,Arial,Sans-serif;font-weight: bold;}
 .navbar>.container .navbar-brand.logo:hover{color:#9d9d9d; }
 .carousel-caption.data-caption{width: 600px;top: 10%;right: 10%;left: 10%;text-align: left;}
-.carousel-caption p.button-click{margin:30px 0 0 45px;}
+.carousel-caption p.button-click{margin:42px 0 0 45px;}
 .img{position: absolute;top: 28%;right: 6%;}
 .img.two{top: 5%;right: 6%;}
 .img.three{top: 5%;right: 7%;}
@@ -347,8 +347,9 @@ footer a:hover{text-decoration: underline;color: #ffffff;}
 transition: all 0.3s ease-out;
 }
 #primary_nav_wrap ul ul a{line-height:120%;padding:10px 15px}
-#primary_nav_wrap ul ul ul.sub-menu{top:0;left:166px;}
+#primary_nav_wrap ul ul ul.sub-menu{top:0;left:168px;}
 #primary_nav_wrap ul li:hover > ul{display:block;}
+
 .dark_menu li:hover > a{color: #286090 !important;}
 #primary_nav_wrap  a.active{color: #286090;}
 #primary_nav_wrap ul li:hover > ul li:hover{background: #286090;}
