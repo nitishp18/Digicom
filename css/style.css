@@ -287,7 +287,7 @@ ul.dark_menu li ul li a:hover {
 .marginleft30{margin:12px 0 0 30px;}
 .btn.cuspage{padding: 6px 22px;border-radius: 25px;}
 .footer{margin-top: 54px;}
-footer a:hover{text-decoration: underline;color: #ffffff;}
+footer a:hover{text-decoration: underline;}
 
 /***************************************SERVICS PAGE **********************************************************/
 .main-title{font-size: 28px;font-family: Arial, sans-serif;margin-bottom: 5px;font-weight: bold;color: #002060;text-transform: capitalize;}
