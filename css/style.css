@@ -1,9 +1,10 @@
 h1,h2,h3,h4,p{font-family: Arial,sans-serif;}
 body {
   color: #5a5a5a;
-  font-family: Arial,sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
 }
+
 /*==========================header====================================*/
 .strip{height: 40px;background:#4b6cb7;line-height: 40px;}
 .strip p {display: block;text-align: right;padding-right: 20px;}
@@ -55,7 +56,7 @@ body {
 }
 .carousel-indicators .active{background:#1B439C; }
 .carousel-indicators li{border-color:#1B439C; }
-.carousel-caption.data-caption h2{font-size: 38px;color: #1B439C;}
+.carousel-caption.data-caption h2{font-size: 38px;color: #1B439C;font-family: 'Open Sans', sans-serif;}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -81,6 +82,7 @@ body {
 .nbs-flexisel-container{margin-top: 30px;}
 ul,ol{list-style-type: none;}
 footer{background:#ffffff;height: 42px;clear: both;margin-top: 40px;border-top: 1px solid #cccccc;}
+footer.page{margin-top: 256px;}
 footer p{text-align: center;color: #000000;font-size: 14px;margin-top: 12px;}
 footer a,footer a:hover {color: #000000;font-size: 14px;}
 .social-position {position: absolute;top: 2px;right: 0;list-style-type: none;padding-top: 5px;}
@@ -170,12 +172,10 @@ top: 32px;}
     padding-left: 0;
   }
 
-  /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
   }
 
-  /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
@@ -192,8 +192,7 @@ ul.dark_menu {
     font-size: 14px;
     line-height: 14px;
 }
- 
-/* Clears all floated List Items */
+
 ul.dark_menu:after {
     content: "";
     clear: both;
@@ -220,17 +219,16 @@ ul.dark_menu li a, ul.dark_menu li a:link {
     padding: 10px 40px;
     font-size: 15px;
 }
-/* List Items Links Hover State Style */
+
 ul.dark_menu li a:hover {color: #002060;}
 a:hover{text-decoration: none;}
-/* List Items Links Active and Selected State Style */
+
 ul.dark_menu li a.selected, ul.dark_menu li a:active {color: #ffffff;}
-/* Sub Menu Unordered List Second Level Style */
+
 ul.dark_menu li ul {
     display: none;
 }
-/* Sub Menu Unordered List Second Level Style
-    When Parent List Item is Hovered */
+
 ul.dark_menu li:hover ul {
     position: absolute;
     display: block;
@@ -241,7 +239,7 @@ ul.dark_menu li:hover ul {
     list-style: none;
     background: #E4E4E4;
 }
-/* Before Second Level Unordered List Style */
+
 ul.dark_menu li ul:before {
     content: " ";
     position: absolute;
@@ -253,26 +251,22 @@ ul.dark_menu li ul:before {
     width: 100%;
 }
 
-
-/* Second Level Menu List Items Style */
 ul.dark_menu li ul li {
     float: none;
     margin: 0 10px;
     border-bottom: 1px solid #BEBBBB;
     
 }
- 
-/* First List Item in Second Level Menu Style */
+
 ul.dark_menu li ul li:first-child {
     margin: 0 10px;
     border-top: 0 none;
 }
- 
-/* Last List Item in Second Level Menu Style */
+
 ul.dark_menu li ul li:last-child {
     border-bottom: 0 none;
 }
-/* Second Level List Items Links Style */
+
 ul.dark_menu li ul li a, ul.dark_menu li ul li a:link {
     color: #333333;
     display: block;
@@ -280,7 +274,7 @@ ul.dark_menu li ul li a, ul.dark_menu li ul li a:link {
     padding: 10px 20px 10px 5px;
     white-space: nowrap;
 }
-/* Second Level List Items Links Hover State Style */
+
 ul.dark_menu li ul li a:hover {
     text-decoration: none;
 }
@@ -290,11 +284,11 @@ ul.dark_menu li ul li a:hover {
 footer a:hover{text-decoration: underline;}
 
 /***************************************SERVICS PAGE **********************************************************/
-.main-title{font-size: 28px;font-family: Arial, sans-serif;margin-bottom: 5px;font-weight: bold;color: #002060;text-transform: capitalize;}
+.main-title{font-size: 28px;font-family: 'Open Sans', sans-serif;margin-bottom: 5px;font-weight: bold;color: #002060;text-transform: capitalize;}
 .block{padding: 31px 0;}
 .block2{border-top: 1px solid #cccccc;padding-top: 110px}
 
-.desc p{font-size: 15px;font-family:Arial, sans-serif;line-height: 22px;}
+.desc p{font-size: 15px;font-family: 'Open Sans', sans-serif;line-height: 22px;}
 #primary_nav_wrap ul
 {
   list-style:none;
@@ -303,7 +297,7 @@ footer a:hover{text-decoration: underline;}
   margin:0;
   padding:0
 }
-#primary_nav_wrap ul.inner-ul{border-right: 1px solid #BEBBBB;}
+
 #primary_nav_wrap ul a
 {
   display:block;
@@ -315,6 +309,7 @@ footer a:hover{text-decoration: underline;}
   padding:15px 27px;
   font-family:Arial,sans-serif;
   text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #primary_nav_wrap ul li
@@ -334,8 +329,9 @@ footer a:hover{text-decoration: underline;}
   left:13px;
   background:rgb(228, 222, 222);
   padding:0;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
 }
-
+.form-cont{margin-top: 20px;}
 #primary_nav_wrap ul ul li
 {
   float:none;
@@ -345,7 +341,7 @@ footer a:hover{text-decoration: underline;}
 transition: all 0.3s ease-out;
 }
 #primary_nav_wrap ul ul a{line-height:120%;padding:10px 15px}
-#primary_nav_wrap ul ul ul.sub-menu{top:0;left:168px;}
+#primary_nav_wrap ul ul ul.sub-menu{top:0;left:100%;}
 #primary_nav_wrap ul li:hover > ul{display:block;}
 
 .dark_menu li:hover > a{color: #286090 !important;}
@@ -457,29 +453,29 @@ display:none;
     display: none;
 }
 .caret {
-display: inline-block;
-width: 0;
-height: 0;
-margin-left: 2px;
-vertical-align: middle;
-border-top: 4px solid;
-border-right: 4px solid transparent;
-border-left: 4px solid transparent;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }
 .topnavbar{float: right;}
 
 
 /*==================================About Us=========================================*/
 
-.main-container{margin-top: 100px; margin-bottom: 40px auto;}
+.main-container{margin-top: 110px;}
 .page-contactus{max-width: 1000px;}
-.page-title-header,.category-page-title{font-size:26px;color:#002060;font-weight: bold;font-family: Arial,Sans-serif;}
-.category-page-title{font-size: 22px;}
-.main-container p{font-size: 16px;font-family: Arial,Sans-serif;}
-
-
+.page-title-header,.category-page-title{font-size:30px;color:#002060;font-weight: bold;font-family: 'Open Sans', sans-serif;}
+.category-page-title{font-size: 22px;font-family: 'Open Sans', sans-serif;}
+.main-container p{font-size: 16px;font-family: 'Open Sans', sans-serif;}
+.aboutus p{font-size: 15px;}
+.aboutusfooter{margin-top: 123px;}
 /*==================================Affiliations=========================================*/
-.brand{width: 220px;height: 200px;border: 1px solid #cccccc;text-align: center;position: relative;
+.brand{width: 215px;height: 200px;border: 1px solid #cccccc;text-align: center;position: relative;
   float: left;margin-right: 12px;margin-bottom: 12px;background: #ffffff;}
 
 .brand img{max-height: 100%;max-width: 100%;  width: auto;height: auto;position: absolute;   top: 0;  bottom: 0;  left: 0;  right: 0; margin: auto;}
@@ -505,9 +501,9 @@ box-shadow: 0 0 5px #999;
 .map{border:1px solid #cccccc;}
 .form-horizontal .form-group{margin: 0 0 15px 0;}
 .form-control{border-radius: 0;}
-.address p.title{font-size: 20px;}
+.address p.title{font-size: 20px;font-family: 'Open Sans', sans-serif;}
 .address{margin-bottom: 20px;font-weight: bold;}
-.address p{margin-bottom: 0;line-height: 23px;font-size: 14px;color: #000000;font-weight: normal;}
+.address p{margin-bottom: 0;line-height: 23px;font-size: 14px;color: #000000;font-weight: normal;font-family: 'Open Sans', sans-serif;}
 .padding-null{padding: 0;}
 .sendbutton{padding-right: 15px;}
 .left-column{padding-left: 0;}
