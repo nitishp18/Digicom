@@ -1,7 +1,7 @@
 h1,h2,h3,h4,p{font-family: Arial,sans-serif;}
 body {
   color: #5a5a5a;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #ffffff;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 .carousel-indicators .active{background:#1B439C; }
 .carousel-indicators li{border-color:#1B439C; }
-.carousel-caption.data-caption h2{font-size: 38px;color: #1B439C;font-family: 'Open Sans', sans-serif;}
+.carousel-caption.data-caption h2{font-size: 38px;color: #1B439C;font-family: Arial, sans-serif;}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -284,11 +284,11 @@ ul.dark_menu li ul li a:hover {
 footer a:hover{text-decoration: underline;}
 
 /***************************************SERVICS PAGE **********************************************************/
-.main-title{font-size: 28px;font-family: 'Open Sans', sans-serif;margin-bottom: 5px;font-weight: bold;color: #002060;text-transform: capitalize;}
+.main-title{font-size: 28px;font-family: Arial, sans-serif;margin-bottom: 5px;font-weight: bold;color: #002060;text-transform: capitalize;}
 .block{padding: 31px 0;}
 .block2{border-top: 1px solid #cccccc;padding-top: 110px}
 
-.desc p{font-size: 15px;font-family: 'Open Sans', sans-serif;line-height: 22px;}
+.desc p{font-size: 15px;font-family: Arial, sans-serif;line-height: 22px;}
 #primary_nav_wrap ul
 {
   list-style:none;
@@ -309,7 +309,7 @@ footer a:hover{text-decoration: underline;}
   padding:15px 27px;
   font-family:Arial,sans-serif;
   text-transform: capitalize;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 #primary_nav_wrap ul li
@@ -469,9 +469,9 @@ display:none;
 
 .main-container{margin-top: 110px;}
 .page-contactus{max-width: 1000px;}
-.page-title-header,.category-page-title{font-size:30px;color:#002060;font-weight: bold;font-family: 'Open Sans', sans-serif;}
-.category-page-title{font-size: 22px;font-family: 'Open Sans', sans-serif;}
-.main-container p{font-size: 16px;font-family: 'Open Sans', sans-serif;}
+.page-title-header,.category-page-title{font-size:30px;color:#002060;font-weight: bold;font-family: Arial, sans-serif;}
+.category-page-title{font-size: 22px;font-family: Arial, sans-serif;}
+.main-container p{font-size: 16px;font-family: Arial, sans-serif;}
 .aboutus p{font-size: 15px;}
 .aboutusfooter{margin-top: 123px;}
 /*==================================Affiliations=========================================*/
@@ -501,9 +501,9 @@ box-shadow: 0 0 5px #999;
 .map{border:1px solid #cccccc;}
 .form-horizontal .form-group{margin: 0 0 15px 0;}
 .form-control{border-radius: 0;}
-.address p.title{font-size: 20px;font-family: 'Open Sans', sans-serif;}
+.address p.title{font-size: 20px;font-family: Arial, sans-serif;}
 .address{margin-bottom: 20px;font-weight: bold;}
-.address p{margin-bottom: 0;line-height: 23px;font-size: 14px;color: #000000;font-weight: normal;font-family: 'Open Sans', sans-serif;}
+.address p{margin-bottom: 0;line-height: 23px;font-size: 14px;color: #000000;font-weight: normal;font-family: Arial, sans-serif;}
 .padding-null{padding: 0;}
 .sendbutton{padding-right: 15px;}
 .left-column{padding-left: 0;}
