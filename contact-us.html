@@ -63,7 +63,6 @@
                                         <li><a href="security.html#cctv">CCTV solutions</a></li>
                                         <li><a href="security.html#act">AC&Time attendance solutions</a></li>
                                         <li><a href="security.html#intrusion">Intrusion alarm solutions</a></li>
-                                        <li><a href="security.html#">Video doorphone solutions</a></li>
                                         <li><a href="security.html#videoapart">Video Apartment Solutions</a></li>
                                         <li><a href="security.html#fire">Fire alarm solutions</a></li>
                                     </ul>
@@ -136,20 +135,21 @@
                             <div class="col-sm-5 col-md-10">
                                 <select class="form-control" id="select1">
                                   <option value="">Select Option</option>
-                                  <option value="Digital Communication systems">Digital Communication systems</option>
-                                  <option value="VoIP solutions">VoIP solutions</option>
-                                  <option value="Wireless solutions">Wireless solutions</option>
-                                  <option value="Call Center solutions">Call Center solutions</option>
-                                  <option value="Dealing room solutions">Dealing room solutions</option>
-                                  <option value="Multi Zone PA systems">Multi Zone PA systems</option>
-                                  <option value="Video conferencing solutions">Video conferencing solutions</option>
-                                  <option value="Mobility solutions">Mobility solutions</option>
-                                  <option value="CCTV solutions">CCTV solutions</option>
-                                  <option value="AC&Time attendance solutions">AC&Time attendance solutions</option>
-                                  <option value="Intrusion alarm solutions">Intrusion alarm solutions</option>
-                                  <option value="Video doorphone solutions">Video doorphone solutions</option>
-                                  <option value="Video Apartment Solutions">Video Apartment Solutions</option>
-                                  <option value="Fire alarm solutions">Fire alarm solutions</option>
+                                  <option id="digi" value="Digital Communication systems">Digital Communication systems</option>
+                                  <option id="vop" value="VoIP solutions">VoIP solutions</option>
+                                  <option id="wireless" value="Wireless solutions">Wireless solutions</option>
+                                  <option id="call" value="Call Center solutions">Call Center solutions</option>
+                                  <option id="dealing" value="Dealing room solutions">Dealing room solutions</option>
+                                  <option id="multi" value="Multi Zone PA systems">Multi Zone PA systems</option>
+                                  <option id="video" value="Video conferencing solutions">Video conferencing solutions</option>
+                                  <option id="mobility" value="Mobility solutions">Mobility solutions</option>
+                                  <option id="cctv" value="CCTV solutions">CCTV solutions</option>
+                                  <option id="act" value="AC&Time attendance solutions">AC&Time attendance solutions</option>
+                                  <option id="intrusion" value="Intrusion alarm solutions">Intrusion alarm solutions</option>
+                                  <option id="videoapart" value="Video Apartment Solutions">Video Apartment Solutions</option>
+                                  <option id="fire" value="Fire alarm solutions">Fire alarm solutions</option>
+                                  <option id="conference" value="Conference Room solutions">Conference Room solutions</option>
+                                  <option id="smarthomes" value="Smart Home Systems">Smart Home Systems</option>
                                 </select>
                                 <p class='text-danger'>Please Select a option.</p>
                             </div>
@@ -193,6 +193,11 @@
     </footer>
     <script type="text/javascript">
          $(function(){
+
+            var hashVal = window.location.hash.replace('#','');
+            var optionval = $('#'+ hashVal).val();
+            $('#select1').val(optionval);
+
             $('#contact_us').on('submit',function(){
                 var fullName = $.trim($("#name").val()),
                     company = $.trim($("#company").val()),
