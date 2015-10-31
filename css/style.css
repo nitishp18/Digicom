@@ -289,7 +289,7 @@ footer a:hover{text-decoration: underline;}
 /***************************************SERVICS PAGE **********************************************************/
 .main-title{font-size: 28px;font-family: Arial, sans-serif;margin-bottom: 5px;font-weight: bold;color: #002060;text-transform: capitalize;}
 .block{padding: 31px 0;}
-.block2{border-top: 1px solid #cccccc;padding-top: 110px}
+.block2{border-top: 1px solid #cccccc;padding-top: 50px}
 
 .desc p{font-size: 15px;font-family: Arial, sans-serif;line-height: 22px;}
 #primary_nav_wrap ul

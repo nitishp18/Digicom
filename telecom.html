@@ -13,17 +13,32 @@
 
     <!-- Bootstrap core CSS -->
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     
     <link href="css/style.css" rel="stylesheet">
   
 
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
     <script type="text/javascript">
         $(window).load(function() {
-            window.scrollTo(0,0);
+            setTimeout(function(){
+                locationHashChanged();
+            },500);
+            
         });
+
+        function locationHashChanged(){
+            var hashVal = window.location.hash.replace('#','');
+            if(hashVal){
+                var offsetVal = $('.'+hashVal).offset().top - 102;
+                $.scrollTo(offsetVal,400);    
+            }
+            
+        }
+
+        window.onhashchange = locationHashChanged;
     </script>
   </head>
 <!-- NAVBAR
@@ -111,7 +126,7 @@
             </div>
         </div>
             <div class="container newpage">
-                <div class="block row top-block clearfix" id="digi" name="digi">
+                <div class="block row top-block clearfix digi" >
                     <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
                         <p class="text-center">
                           
@@ -128,7 +143,7 @@
                         <p><a href="contact-us.html#digi" class="btn btn-primary marginleft30 cuspage">Contact Us</a></p>
                     </div>
                 </div>
-                <div class="block row clearfix block2" id="vop" name="vop">
+                <div class="block row clearfix block2 vop" >
                      <div class="c col-md-5">
                         <p class="text-left">
                             <img class="img-responsive" src="images/digital2.png" width="auto" height="auto" alt="">
@@ -143,7 +158,7 @@
                         <p><a href="contact-us.html#vop" class="btn btn-primary marginleft30 cuspage">Contact Us</a></p>
                     </div>
                </div>
-                <div class="block row clearfix block2" id="wireless" name="wireless">
+                <div class="block row clearfix block2 wireless" >
                     <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
                         <p class="text-center">
                           
@@ -158,7 +173,7 @@
                         <p><a href="contact-us.html#wireless" class="btn btn-primary marginleft30 cuspage">Contact Us</a></p>
                     </div>
                 </div>
-                <div class="block row clearfix block2" id="call" name="call">
+                <div class="block row clearfix block2 call" >
                      <div class="c col-md-6">
                         <p class="text-left">
                             <img class="img-responsive" src="images/callnew.jpg" width="auto" height="auto" alt="">
@@ -173,7 +188,7 @@
                         <p><a href="contact-us.html#call" class="btn btn-primary marginleft30 cuspage">Contact Us</a></p>
                     </div>
                </div>
-                <div class="block row clearfix block2" id="dealing" name="dealing">
+                <div class="block row clearfix block2 dealing" >
                     <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
                         <p class="text-center">
                           
@@ -188,7 +203,7 @@
                         <p><a href="contact-us.html#dealing" class="btn btn-primary marginleft30 cuspage">Contact Us</a></p>
                     </div>
                 </div>
-                <div class="block row clearfix block2" id="multi" name="multi">
+                <div class="block row clearfix block2 multi" >
                      <div class="c col-md-6">
                         <p class="text-left">
                             <img class="img-responsive" src="images/dealing.png" width="auto" height="auto" alt="">
@@ -202,7 +217,7 @@
                         <p><a href="contact-us.html#multi" class="btn btn-primary marginleft30 cuspage">Contact Us</a></p>
                     </div>
                </div>
-                <div class="block row clearfix block2" id="video" name="video">
+                <div class="block row clearfix block2 video" >
                     <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
                         <p class="text-center">
                           
@@ -217,7 +232,7 @@
                         <p><a href="contact-us.html#video" class="btn btn-primary marginleft30 cuspage">Contact Us</a></p>
                     </div>
                 </div>
-                 <div class="block row clearfix block2" id="mobility" name="mobility">
+                 <div class="block row clearfix block2 mobility" >
                      <div class="c col-md-6">
                         <p class="text-left">
                             <img class="img-responsive" src="images/mobility.png" width="auto" height="auto" alt="">

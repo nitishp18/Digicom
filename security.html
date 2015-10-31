@@ -13,21 +13,36 @@
 
     <!-- Bootstrap core CSS -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.carousel.css">
 
     <link href="css/style.css" rel="stylesheet">
 
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
     <script type="text/javascript">
         $(window).load(function() {
-            window.scrollTo(0,0);
+            setTimeout(function(){
+                locationHashChanged();
+            },500);
         });
+
+        function locationHashChanged(){
+            var hashVal = window.location.hash.replace('#','');
+            if(hashVal){
+                var offsetVal = $('.'+hashVal).offset().top - 102;
+                $.scrollTo(offsetVal,400);
+            }
+            
+        }
+
+        window.onhashchange = locationHashChanged;
+        
     </script>
   </head>
 <!-- NAVBAR
-================================================== -->
+================================================ -->
   <body>
     <div class="navbar-wrapper clearfix">
         <div class="navbar-wrapper homepage clearfix">
@@ -110,7 +125,7 @@
         </div>
       </div>
             <div class="container newpage">
-                <div class="block row clearfix" id="cctv" name="cctv">
+                <div class="block row clearfix cctv" >
                     <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
                         <p class="text-center">
                           
@@ -129,7 +144,7 @@
                         <p><a href="contact-us.html#cctv" class="btn btn-primary marginleft30 cuspage">Contact Us</a></p>
                     </div>
                 </div>
-                <div class="block row clearfix block2" id="act" name="act">
+                <div class="block row clearfix block2 act" >
                      <div class="c col-md-7">
                         <p class="text-left">
                             <img class="img-responsive " src="images/act.png" width="auto" height="auto" alt="">
@@ -145,7 +160,7 @@
                         <p><a href="contact-us.html#act" class="btn btn-primary marginleft30 cuspage">Contact Us</a></p>
                     </div>
                </div>
-                <div class="block row clearfix block2" id="intrusion" name="intrusion">
+                <div class="block row clearfix block2 intrusion" >
                     <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
                         <p class="text-center">
                           
@@ -163,7 +178,7 @@
                         <p><a href="contact-us.html#intrusion" class="btn btn-primary marginleft30 cuspage">Contact Us</a></p>
                     </div>
                 </div>
-                <div class="block row clearfix block2" id="videoapart" name="videoapart">
+                <div class="block row clearfix block2 videoapart" >
                      <div class="c col-md-7">
                         <p class="text-left">
                             <img class="img-responsive " src="images/videoapart.png" width="auto" height="auto" alt="">
@@ -179,7 +194,7 @@
                         <p><a href="contact-us.html#videoapart" class="btn btn-primary marginleft30 cuspage">Contact Us</a></p>
                     </div>
                </div>
-                <div class="block row clearfix block2" id="fire" name="fire">
+                <div class="block row clearfix block2 fire" >
                     <div class="col-xs-12 col-sm-6 col-md-6 col-sm-push-6">
                         <p class="text-center">
                           
