@@ -5,6 +5,7 @@ body {
   background-color: #ffffff;
   overflow-y:scroll;
 }
+p{text-align: justify;}
 
 /*==========================header====================================*/
 .strip{height: 40px;background:#4b6cb7;line-height: 40px;}
