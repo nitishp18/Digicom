@@ -555,6 +555,7 @@ box-shadow: 0 0 5px #999;
     .navbar-header {
         float:none;
     }
+    .carousel-inner img{display: none;}
     #myCarousel .container img{display: none;}
 }
 @media screen and (max-width: 470px){
