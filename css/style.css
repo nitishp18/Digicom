@@ -497,7 +497,7 @@ display:none;
 .brand{width: 215px;height: 200px;border: 1px solid #cccccc;text-align: center;position: relative;
   float: left;margin-right: 12px;margin-bottom: 12px;background: #ffffff;}
 
-.affiliation-brand{padding:0 6px;}
+.affiliation-brand{padding:0 4px;}
 .affiliation-brand .border{height: 200px;border: 1px solid #cccccc;text-align: center;position: relative;
  margin-bottom: 12px;background: #ffffff;}
 
