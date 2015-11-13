@@ -82,20 +82,17 @@ p{text-align: justify;}
 .aboutus-ul{list-style-type: disc;padding-left: 20px}
 .nbs-flexisel-container{margin-top: 30px;}
 ul,ol{list-style-type: none;}
-footer{background:#ffffff;height: 42px;clear: both;margin-top: 40px;border-top: 1px solid #cccccc;}
+footer{background:#ffffff;height: 48px;clear: both;margin-top: 40px;border-top: 1px solid #cccccc;}
 
 footer p{text-align: center;color: #000000;font-size: 14px;margin-top: 12px;}
 footer a,footer a:hover {color: #000000;font-size: 14px;}
-.social-position {position: absolute;top: 2px;right: 0;list-style-type: none;padding-top: 5px;}
-.social-position ul{margin-bottom: 0;}
 .social-position li { display:inline-block; *display:inline; margin-right:5px;line-height: 0;}
-.dg-sprite { display:inline-block; list-style-type: none;}
-a.google, a.in, a.fb, a.tw, a.mail { width:35px; height:35px; }
+.dg-sprite { display:inline-block; list-style-type: none;margin: 6px 0 0 0;}
+a.google, a.in, a.fb, a.tw, a.mail,a.ss { width:35px; height:35px; }
 
-a.fb { background:url(../images/fb.png) 0 0 no-repeat; }
-
-a.tw { background:url(../images/linkedin.png) 0 0 no-repeat; }
-
+a.fb { background:url(../images/fb.png) 0 0 no-repeat;margin-right: 4px;}
+a.tw { background:url(../images/linkedin.png) 0 0 no-repeat;margin-right: 3px;}
+a.ss { background:url(../images/slideshare.png) 0 0 no-repeat; }
 
 .sitemap-position { float:left; }
 .sitemap-position li { display:inline-block; *display:inline; border-right:1px solid #ccc; }
@@ -497,7 +494,7 @@ display:none;
 .brand{width: 215px;height: 200px;border: 1px solid #cccccc;text-align: center;position: relative;
   float: left;margin-right: 12px;margin-bottom: 12px;background: #ffffff;}
 
-.affiliation-brand{padding:0 4px;}
+.affiliation-brand{padding:0 5px;}
 .affiliation-brand .border{height: 200px;border: 1px solid #cccccc;text-align: center;position: relative;
  margin-bottom: 12px;background: #ffffff;}
 
