@@ -516,7 +516,9 @@ box-shadow: 0 0 5px #999;
 -moz-box-shadow: 0 0 5px #999;
 -webkit-box-shadow: 0 0 5px #999;
 -o-box-shadow: 0 0 5px #999;
--ms-box-shadow: 0 0 5px #999;}
+-ms-box-shadow: 0 0 5px #999;
+z-index: 99;
+}
 .noRightMargin{margin-right: 0;}
 .form-horizontal .control-label{font-size: 13px;font-family: Arial,sans-serif;text-align: left;padding: 0}
 .iframe{width: 100% !important;}
