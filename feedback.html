@@ -215,7 +215,7 @@
                     type_of_feedback: type_of_feedback,
                     feedback_against: feedback_against,
                     feedback_message : feedback_message,
-                    message_body: "Name: "+fullName+"<br> Company: "+company+"<br> Phone Number: "+phone_no
+                    message_body: "Name: "+fullName+"<br> Company: "+company+"<br> Phone Number: "+phone_no + "<br> Email: "+ email +"<br> Feedback Type: "+ type_of_feedback+ "<br> Feedback Against: "+ feedback_against +"<br> Feedback Message: "+ feedback_message
                 }
 
                 $.post('php/feedback.php', post_data, function(data, textStatus, xhr) {
