@@ -171,7 +171,8 @@
 <script type="text/javascript">
      $(function(){
         $('#feedback_form').on('submit',function(){
-            var fullName = $.trim($("#name").val()),
+            var self = this,
+                fullName = $.trim($("#name").val()),
                 company = $.trim($("#company").val()),
                 phone_no = $.trim($("#phone_no").val()),
                 email = $.trim($("#email").val()),
@@ -183,6 +184,7 @@
                 email_regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
                 post_data = null;
 
+            $(self).find('#submit').prop('disabled',true);    
             $(".text-danger").hide();
 
             if(!fullName){
@@ -220,7 +222,16 @@
 
                 $.post('php/feedback.php', post_data, function(data, textStatus, xhr) {
                     /*optional stuff to do after success */
-                    console.log(data);
+                    //console.log(data);
+                    $(self).find('#submit').prop('disabled',false);
+                    $("#name").val('');
+                    $("#company").val('');
+                    $("#phone_no").val('');
+                    $("#email").val('');
+                    $("#select1").val('');
+                    $("#select2").val('');
+                    $("textarea").val('');
+                    $(self).find('text-success').slideDown(400).delay(3000).slideUp(400);
                 });
                 
                 

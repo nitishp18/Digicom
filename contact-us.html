@@ -196,7 +196,8 @@
             $('#select1').val(optionval);
 
             $('#contact_us').on('submit',function(){
-                var fullName = $.trim($("#name").val()),
+                var self = this,
+                    fullName = $.trim($("#name").val()),
                     company = $.trim($("#company").val()),
                     phone_no = $.trim($("#phone_no").val()),
                     email = $.trim($("#email").val()),
@@ -206,6 +207,8 @@
                     phone_no_regex = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/,
                     email_regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
                     post_data = null;
+                
+                $(self).find('#submit').prop('disabled',true);
                 $(".text-danger").hide();
                 if(!fullName){
                     $("#name").siblings('.text-danger').show();
@@ -234,7 +237,16 @@
                         message_body: "Name: "+fullName+"<br> Company: "+company+"<br> Phone Number: "+phone_no + "<br> Email: "+ email +"<br> Solutions: "+ solutions+ "<br> Comments: "+ comments
                     }
                     $.post('php/contact.php', post_data, function(data, textStatus, xhr) {
-                        console.log(data);
+                        //console.log(data);
+                        /*Clear all field values*/
+                        $(self).find('#submit').prop('disabled',false);
+                        $("#name").val('');
+                        $("#company").val('');
+                        $("#phone_no").val('');
+                        $("#email").val('');
+                        $("#select1").val('');
+                        $("textarea").val('');
+                        $(self).find('text-success').slideDown(400).delay(3000).slideUp(400);
                     });
                     
                     
