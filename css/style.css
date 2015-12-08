@@ -490,6 +490,8 @@ display:none;
 .flexslider  .flex-control-nav{bottom: -27px;}
 .flexslider .flex-control-paging li a.flex-active{background: #002060;}
 .flexslider .flex-control-paging li a:hover,.flexslider .flex-control-paging li a{background:#4b6cb7; }
+.lastwords{font-size: 15px;color: #333333;font-weight: bold;}
+
 /*==================================Affiliations=========================================*/
 .brand{width: 215px;height: 200px;border: 1px solid #cccccc;text-align: center;position: relative;
   float: left;margin-right: 12px;margin-bottom: 12px;background: #ffffff;}
