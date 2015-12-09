@@ -8,6 +8,7 @@ body {
 p{text-align: justify;}
 
 /*==========================header====================================*/
+
 .strip{height: 40px;background:#4b6cb7;line-height: 40px;}
 .strip p {display: block;text-align: right;padding-right: 20px;}
 .strip p span{color: #ffffff;font-family: Arial,sans-serif;font-size: 14px;}
@@ -165,27 +166,27 @@ left: 164px;
 top: 32px;}
 .topnavbar ul.dark_menu li ul.inner-ul li.sec:hover ul.sub-menu{width: 334px;display: block;}
 .topnavbar ul.dark_menu li ul.inner-ul li:hover > ul{display: block;}
- .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
+.navbar-wrapper .navbar {
+  padding-right: 0;
+  padding-left: 0;
+}
 
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
+.navbar-wrapper .navbar {
+  border-radius: 4px;
+}
 
-  .carousel-caption p {
-    font-size: 16px;
-    color: #5a5a5a;
-    font-family: Arial, sans-serif;
-    line-height: 1.4;
-    overflow: hidden;
-    word-wrap:break-word;
-  }
+.carousel-caption p {
+  font-size: 16px;
+  color: #5a5a5a;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  overflow: hidden;
+  word-wrap:break-word;
+}
 
-  .featurette-heading {
-    font-size: 50px;
-  }
+.featurette-heading {
+  font-size: 50px;
+}
 ul.dark_menu {
     list-style: none;
     padding: 0;
@@ -285,6 +286,7 @@ ul.dark_menu li ul li a:hover {
 footer a:hover{text-decoration: underline;}
 
 /***************************************SERVICS PAGE **********************************************************/
+
 .main-title{font-size: 28px;font-family: Arial, sans-serif;margin-bottom: 5px;font-weight: bold;color: #002060;text-transform: capitalize;}
 .block{padding: 31px 0;}
 .block2{border-top: 1px solid #cccccc;padding-top: 50px}
@@ -350,13 +352,7 @@ transition: all 0.3s ease-out;
 #primary_nav_wrap ul li:hover > ul li:hover{background: #286090;}
 #primary_nav_wrap ul li a.selected {color:#286090; }
 #primary_nav_wrap ul.inner-ul li:hover > a{color: #ffffff !important;}
-
-
-
-.clearout {
-height:20px;
-clear:both;
-}
+.clearout {height:20px;clear:both;}
 #flexiselDemo3 .man{margin-top: 41px;}
 #flexiselDemo3 .rediffusion{margin-top: 71px;}
 #flexiselDemo3 .Kantilal{margin-top: 31px;}
@@ -536,6 +532,10 @@ z-index: 99;
 .sendbutton{padding-right: 15px;}
 .left-column{padding-left: 0;}
 
+/*=================Success Message========================*/
+
+.success-msg{;background-color: #DFF2BF;border: 1px solid;margin: 10px 0px;padding:8px 10px 8px 50px;
+  background:url(../images/success.png) 10px center no-repeat;font-family: Arial,sans-serif;font-size: 15px;display: none;}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media screen and (max-width: 1348px){
