@@ -2,17 +2,17 @@
 if($_POST)
 {
     $to_email       = "sales@digicomindia.com"; //Recipient email, Replace with own email here
-    
+
     //check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
-        
+
         $output = json_encode(array( //create JSON data
-            'type'=>'error', 
+            'type'=>'error',
             'text' => 'Sorry Request must be Ajax POST'
         ));
         die($output); //exit script outputting json data
-    } 
-    
+    }
+
     //Sanitize input data using PHP filter_var().
     $user_name  = filter_var($_POST["fullName"], FILTER_SANITIZE_STRING);
     $company    = filter_var($_POST["company"], FILTER_SANITIZE_STRING);
@@ -20,7 +20,24 @@ if($_POST)
     $phone_number  = filter_var($_POST["phone_no"], FILTER_SANITIZE_NUMBER_INT);
     $comments  = filter_var($_POST["comments"], FILTER_SANITIZE_STRING);
     $message_body  = filter_var($_POST["message_body"], FILTER_SANITIZE_STRING);
-    
+
+
+    // Start code added by hemant from enjay
+        $calldetails='{"apikey":"c3ce7585276536abcce530a4f871c1d8","departmentid":"1","email":"'.$user_email.'","name":"'.$user_name.'","number":"'.$phone_number.'"}';
+        $calldetails=urlencode($calldetails);
+        $callurl = "http://app.enjayclick2call.com/ec2c.php";
+        $curlobj = curl_init();
+        $curlurl = $callurl."?calldetails=$calldetails";
+        curl_setopt($curlobj, CURLOPT_URL, $curlurl);
+        curl_setopt($curlobj, CURLOPT_HEADER, false);
+        curl_setopt($curlobj, CURLOPT_RETURNTRANSFER, 1);
+        $response = curl_exec($curlobj);
+        curl_close($curlobj);
+        //print_r($response);
+        //die();
+    // End code added by hemant from enjay
+
+
     //additional php validation
     /*if(strlen($user_name)<4){ // If length is less than 4 it will output JSON error.
         $output = json_encode(array('type'=>'error', 'text' => 'Name is too short or empty!'));
@@ -46,7 +63,7 @@ if($_POST)
         $output = json_encode(array('type'=>'error', 'text' => 'Too short message! Please enter something.'));
         die($output);
     }*/
-    
+
     //email body
     //$message_body = $message."\r\n\r\n-".$user_name."\r\nEmail : ".$user_email."\r\nPhone Number : ". $phone_number ;
     $subject = "Feedback Form";
@@ -54,9 +71,9 @@ if($_POST)
     $headers = 'From: '.$user_name.'' . "\r\n" .
     'Reply-To: '.$user_email.'' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
-    
+
     $send_mail = mail($to_email, $subject, $message_body, $headers);
-    
+
     if(!$send_mail)
     {
         //If mail couldn't be sent output error. Check your PHP email configuration (if it ever happens)
