@@ -124,7 +124,7 @@
             <p>Daulat Nagar Road No.3,</p>
             <p>Borivali (E),Mumbai-400 066</p>
             <p><strong>Phone: </strong>2863 5065 / 2863 5066</p>
-            <p><strong>Mobile: </strong>810 830 6444/810 830 9444 <a href="javascript:void(0)" id="btn2" class="callusnow" data-toggle="popover" title="Call Me Now" data-placement="top"><img src="images/callus.gif" alt="callme" ></a></p>
+            <p><strong>Mobile: </strong>810 830 6444/810 830 9444</p>
             <p><strong>Website: </strong><a href="http://www.digicomindia.com/" target="_blank">http://www.digicomindia.com</a></p>
             <p><strong>Email: </strong><a href="mailto:sales@digicomindia.com" target="_top">sales@digicomindia.com</a></p>
         </div>
@@ -148,7 +148,7 @@
                         <div class="form-group">
                             <label for="phone_no" class="col-sm-2 col-md-2 control-label">Phone Number</label>
                             <div class="col-sm-5 col-md-10">
-                                <input type="text" class="form-control" id="phone_no" name="name" placeholder="Phone Number" value="">
+                                <input type="text" class="form-control" id="phone_no" name="name" placeholder="Phone Number" value="" title="Receive Call Back">
                                 <p class='text-danger'>Please Enter Valid Phone Number.</p>
                             </div>
                         </div>
@@ -216,7 +216,10 @@
     </footer>
     <script type="text/javascript">
          $(function(){
-
+            $(document).tooltip({ selector: "[title]",
+                              placement: "top",
+                              trigger: "focus",
+                              animation: false}); 
             var hashVal = window.location.hash.replace('#','');
             var optionval = $('#'+ hashVal).val();
             $('#select1').val(optionval);
