@@ -18,6 +18,33 @@
     <script type="text/javascript">
     $(document).ready(function(){
         $(this).scrollTop(0);
+        var $btn2 = $('#btn2');
+        $btn2.data('state', 'hover');
+
+        var enterShow = function () {
+            if ($btn2.data('state') === 'hover') {
+                $btn2.popover('show');
+            }
+        };
+        var exitHide = function () {
+            if ($btn2.data('state') === 'hover') {
+                $btn2.popover('hide');
+            }
+        };
+
+        var clickToggle = function () {
+            if ($btn2.data('state') === 'hover') {
+                $btn2.data('state', 'pinned');
+            } else {
+                $btn2.data('state', 'hover')
+            }
+        };
+
+        $btn2.popover({trigger: 'manual'})
+            .on('mouseenter', enterShow)
+            .on('mouseleave', exitHide)
+            .on('click', clickToggle);
+
     });
     </script>
   </head>
@@ -31,6 +58,7 @@
                         <img src="images/mail-icon.png" alt="mail-icon">
                         <span>sales@digicomindia.com</span>
                     </a>
+                     <a href="contact-us.html" class="callme"><img src="images/callus.gif" alt="callus">Call Me Now</a>
                 </p>
             </div>
             <div class="container">
@@ -72,10 +100,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="crm.html">Conference Rooms</a>
-                                    <ul class="sub-menu">
-                                       <!--  <li><a href="#">Lighting control solutions</a></li>
-                                        <li><a href="#">AV integration solutions</a></li> -->
-                                    </ul>
+                                   
                                 </li>
                                 <li><a href="smarthomes.html">Smart homes</a></li>
                             </ul>
@@ -99,7 +124,7 @@
             <p>Daulat Nagar Road No.3,</p>
             <p>Borivali (E),Mumbai-400 066</p>
             <p><strong>Phone: </strong>2863 5065 / 2863 5066</p>
-            <p><strong>Mobile: </strong>810 830 6444/810 830 9444</p>
+            <p><strong>Mobile: </strong>810 830 6444/810 830 9444 <a href="javascript:void(0)" id="btn2" class="callusnow" data-toggle="popover" title="Call Me Now" data-placement="top"><img src="images/callus.gif" alt="callme" ></a></p>
             <p><strong>Website: </strong><a href="http://www.digicomindia.com/" target="_blank">http://www.digicomindia.com</a></p>
             <p><strong>Email: </strong><a href="mailto:sales@digicomindia.com" target="_top">sales@digicomindia.com</a></p>
         </div>

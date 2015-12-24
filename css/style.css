@@ -12,6 +12,10 @@ p{text-align: justify;}
 .strip{height: 40px;background:#4b6cb7;line-height: 40px;}
 .strip p {display: block;text-align: right;padding-right: 20px;}
 .strip p span{color: #ffffff;font-family: Arial,sans-serif;font-size: 14px;}
+.callme{font-size: 12px;color: #ffffff;margin-left: 14px;}
+.callme:hover{text-decoration: none;color: #ffffff;}
+.popover-content{display: none;}
+.callusnow{margin-left: 10px;}
 .navbar-nav{float: right;margin-right: 37px;}
 .navbar-nav>li>a{padding: 15px 40px;}
 .navbar-wrapper > .container {
