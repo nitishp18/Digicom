@@ -33,8 +33,8 @@ if($_POST)
         curl_setopt($curlobj, CURLOPT_RETURNTRANSFER, 1);
         $response = curl_exec($curlobj);
         curl_close($curlobj);
-        //print_r($response);
-        //die();
+        /*print_r($response);
+        die();*/
     // End code added by hemant from enjay
 
 
@@ -66,7 +66,7 @@ if($_POST)
 
     //email body
     //$message_body = $message."\r\n\r\n-".$user_name."\r\nEmail : ".$user_email."\r\nPhone Number : ". $phone_number ;
-    $subject = "Feedback Form";
+    $subject = "Contact Us Form";
     //proceed with PHP email.
     $headers = 'From: '.$user_name.'' . "\r\n" .
     'Reply-To: '.$user_email.'' . "\r\n" .
