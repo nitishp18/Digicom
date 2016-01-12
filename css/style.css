@@ -13,8 +13,8 @@ p{text-align: justify;}
 .strip p {display: block;text-align: right;padding-right: 20px;}
 .strip p span{color: #ffffff;font-family: Arial,sans-serif;font-size: 14px;}
 .callme{font-size: 12px;color: #ffffff;margin-left: 14px;}
-.callme img{margin:-5px 9px 0 0;}
-.callme.sms img{margin-top: 0;}
+.callme img{margin:0 9px 0 0;}
+
 .callme:hover{text-decoration: none;color: #ffffff;}
 .popover-content{display: none;}
 .callusnow{margin-left: 10px;}
