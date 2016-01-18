@@ -28,6 +28,7 @@ p{text-align: justify;}
   padding-right: 15px;
   padding-left: 15px;
 }
+.radiobuttons{visibility: hidden;}
 .navbar-wrapper .navbar .container {
   width: auto;
   background:rgba(226, 219, 219, 0.38);
@@ -466,7 +467,7 @@ display:none;
   border-left: 4px solid transparent;
 }
 .topnavbar{float: right;}
-
+.radio-wrap{padding: 0;}
 
 /*==================================About Us=========================================*/
 
@@ -551,7 +552,7 @@ z-index: 99;
    .carousel-caption.data-caption{width: 450px;}
 }
 @media screen and (max-width: 1083px){
-    .navbar-inverse .navbar-toggle .icon-bar{background-color: #000000;}
+   .navbar-inverse .navbar-toggle .icon-bar{background-color: #000000;}
     .navbar-inverse .navbar-toggle:hover span,.navbar-inverse .navbar-toggle:focus{background-color: #ffffff;}
     #primary_nav_wrap ul.dark_menu{width: 100%;}
     #navbar{background: rgb(233, 233, 233);border-color: rgb(233, 233, 233);}
@@ -574,6 +575,7 @@ z-index: 99;
     #myCarousel .container img{display: none;}
      .carousel-caption.data-caption{width: 80%;}
      .carousel{height: 340px;}
+
 }
 @media screen and (max-width: 770px){
   .carousel{margin-top: 10px;}
