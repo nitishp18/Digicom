@@ -131,5 +131,55 @@
     </div>
 </footer>
 <div><!--outer-->
+<script type="text/javascript">
+     $(function(){
+        
+        $('#contact_us').on('submit',function(){
+            var self = this,
+                fullName = $.trim($("#name").val()),
+                phone_no = $.trim($("#phone_no").val()),
+                email = $.trim($("#email").val()),
+                err = false,
+                phone_no_regex = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/,
+                email_regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
+                post_data = null;
+            
+            $(self).find('#submit').prop('disabled',true);
+            $(".text-danger").hide();
+            if(!fullName){
+                $("#name").siblings('.text-danger').show();
+                err = true;
+            }
+            if (!phone_no || !phone_no_regex.test(phone_no)) {
+                $("#phone_no").siblings('.text-danger').show();
+                err = true;
+            }
+            if (!email || !email_regex.test(email)) {
+                $("#email").siblings('.text-danger').show();
+                err = true;
+            }
+            if(!err){
+                post_data = {
+                    fullName : fullName,
+                    phone_no : phone_no,
+                    email: email,
+                }
+                $.post('php/callme.php', post_data, function(data, textStatus, xhr) {
+                    //console.log(data);
+                    /*Clear all field values*/
+                    $(self).find('#submit').prop('disabled',false);
+                    $("#name").val('');
+                    $("#phone_no").val('');
+                    $("#email").val('');
+                    $(self).find('.success-msg').slideDown(400).delay(3000).slideUp(400);
+                });
+                
+                
+            }
+            
+            return false;
+        });
+     });
+ </script> 
 </body>
 </html>
