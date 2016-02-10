@@ -21,23 +21,6 @@ if($_POST)
     $comments  = filter_var($_POST["comments"], FILTER_SANITIZE_STRING);
     $message_body  = filter_var($_POST["message_body"], FILTER_SANITIZE_STRING);
 
-
-    // Start code added by hemant from enjay
-        $calldetails='{"apikey":"c3ce7585276536abcce530a4f871c1d8","departmentid":"1","email":"'.$user_email.'","name":"'.$user_name.'","number":"'.$phone_number.'"}';
-        $calldetails=urlencode($calldetails);
-        $callurl = "http://app.enjayclick2call.com/ec2c.php";
-        $curlobj = curl_init();
-        $curlurl = $callurl."?calldetails=$calldetails";
-        curl_setopt($curlobj, CURLOPT_URL, $curlurl);
-        curl_setopt($curlobj, CURLOPT_HEADER, false);
-        curl_setopt($curlobj, CURLOPT_RETURNTRANSFER, 1);
-        $response = curl_exec($curlobj);
-        curl_close($curlobj);
-        /*print_r($response);
-        die();*/
-    // End code added by hemant from enjay
-
-
     //additional php validation
     /*if(strlen($user_name)<4){ // If length is less than 4 it will output JSON error.
         $output = json_encode(array('type'=>'error', 'text' => 'Name is too short or empty!'));
