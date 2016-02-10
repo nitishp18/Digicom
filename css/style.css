@@ -469,6 +469,10 @@ display:none;
 .topnavbar{float: right;}
 .radio-wrap{padding: 0;}
 
+/*==================================Call me page =========================================*/
+.callme-container{width: 700px;}
+.callme-container h3{background:url(../images/phoneicon.png) 10px center no-repeat;padding-left: 38px;}
+.callme-submit{margin-left: 15px;}
 /*==================================About Us=========================================*/
 
 .main-container{margin-top: 110px;}
